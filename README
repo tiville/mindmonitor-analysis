@@ -1,0 +1,102 @@
+MindPy - EEG 60 Hz Signal Analysis
+==================================
+
+MindPy is a Python script for analyzing 60 Hz EEG signal strength from 
+Mind Monitor CSV data using Fast Fourier Transform (FFT) and Welch's method.
+
+
+ Installation Guide
+=====================
+
+ Install Visual Studio Code
+------------------------------
+1. Download Visual Studio Code: https://code.visualstudio.com/
+2. Install it and follow the on-screen instructions.
+3. Open **VS Code** after installation.
+
+
+ Install Python
+------------------
+1. Download the latest version of Python: https://www.python.org/downloads/
+2. Run the installer and **check the box**:  "Add Python to PATH".
+3. Click **Install Now** and wait for the installation to complete.
+4. Verify the installation by running the following command in the terminal:
+
+   python --version
+
+
+Install Required Python Packages
+-------------------------------------
+1. Open **VS Code** and go to **Terminal** → **New Terminal**.
+2. Run the following command to install required packages:
+
+   pip install pandas numpy matplotlib scipy
+
+
+
+Running the Script
+======================
+1. Open **VS Code** and create a new folder and name it of your choice. Next open file and load `mindpy.py`. 
+Next open the mindmonitor file and add it to the folder. Toggle back to the mindpy file.
+
+2. Open a terminal and navigate to the script’s folder:
+
+   cd path/to/mindpy
+
+3. Run the script:
+
+   python mindpy.py
+
+OR YOU CAN HIT the run arrow while mindpy file is open in VSCODE. 
+
+4. Enter the full path to your **Mind Monitor CSV file** when prompted in the terminal.
+
+
+What the Script Does
+=======================
+
+- **Loads EEG data** from a Mind Monitor CSV file.
+- **Uses FFT & Welch’s method** to analyze 60 Hz signal strength.
+- **Compares signal strength** across four electrodes:  
+  - **AF7 & AF8** (forehead)
+  - **TP9 & TP10** (temporal lobe)
+- **Visualizes results** using a bar chart.
+
+
+ Example Output
+==================
+
+60 Hz Power (µV²) by Electrode:
+
+   RAW_AF7: 2.54
+   RAW_AF8: 3.12
+   RAW_TP9: 1.98
+   RAW_TP10: 2.76
+
+*A bar chart will also be displayed.*
+
+
+ Troubleshooting
+==================
+
+1. **File Not Found Error**  
+   - Ensure you enter the correct full path to your CSV file.
+
+2. **Missing Required Packages**  
+   - Run:  
+
+     pip install pandas numpy matplotlib scipy
+
+3. **Python Not Found**  
+   - Ensure Python is installed and added to your system PATH.
+
+
+🔗 Resources
+============
+
+- Mind Monitor App: https://mind-monitor.com/
+- Python Official Site: https://www.python.org/
+- Visual Studio Code: https://code.visualstudio.com/
+
+
+==================
